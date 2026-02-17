@@ -1,0 +1,126 @@
+=================================================================
+LISTE DES BIBLIOTHÈQUES UTILISÉES
+=================================================================
+
+Ce fichier liste toutes les bibliothèques Python utilisées
+pour le modèle de prédiction de fraude bancaire.
+
+=================================================================
+BIBLIOTHÈQUES PRINCIPALES
+=================================================================
+
+1. pandas (pd)
+   - Utilisation: Manipulation et analyse de données
+   - Version typique: >= 1.3.0
+
+2. numpy (np)
+   - Utilisation: Calculs numériques et opérations mathématiques
+   - Version typique: >= 1.20.0
+
+3. matplotlib.pyplot (plt)
+   - Utilisation: Création de visualisations et graphiques
+   - Version typique: >= 3.4.0
+
+4. seaborn (sns)
+   - Utilisation: Visualisation statistique avancée
+   - Version typique: >= 0.11.0
+
+=================================================================
+BIBLIOTHÈQUES DE MACHINE LEARNING
+=================================================================
+
+5. sklearn.model_selection
+   - train_test_split: Division des données en ensembles train/test
+   - cross_val_score: Validation croisée
+   - StratifiedKFold: Stratification des folds
+
+6. sklearn.preprocessing
+   - StandardScaler: Standardisation des features
+   - RobustScaler: Standardisation robuste aux outliers
+
+7. sklearn.linear_model
+   - LogisticRegression: Régression logistique
+
+8. sklearn.ensemble
+   - RandomForestClassifier: Forêt aléatoire
+   - GradientBoostingClassifier: Gradient Boosting
+
+9. sklearn.tree
+   - DecisionTreeClassifier: Arbre de décision
+
+10. sklearn.svm
+    - SVC: Support Vector Classification
+
+11. sklearn.neighbors
+    - KNeighborsClassifier: K-Nearest Neighbors
+
+12. sklearn.metrics
+    - classification_report: Rapport de classification
+    - confusion_matrix: Matrice de confusion
+    - accuracy_score: Précision globale
+    - precision_score: Précision
+    - recall_score: Rappel
+    - f1_score: Score F1
+    - roc_auc_score: Score ROC-AUC
+    - roc_curve: Courbe ROC
+    - precision_recall_curve: Courbe Précision-Rappel
+    - average_precision_score: Score de précision moyenne
+
+=================================================================
+BIBLIOTHÈQUES POUR LE DÉSÉQUILIBRE DES CLASSES (imblearn)
+=================================================================
+
+13. imblearn.over_sampling
+    - SMOTE: Synthetic Minority Over-sampling Technique
+    - ADASYN: Adaptive Synthetic Sampling
+    - RandomOverSampler: Suréchantillonnage aléatoire
+
+14. imblearn.under_sampling
+    - RandomUnderSampler: Sous-échantillonnage aléatoire
+    - TomekLinks: Liens de Tomek
+
+15. imblearn.combine
+    - SMOTETomek: Combinaison SMOTE + Tomek Links
+    - SMOTEENN: Combinaison SMOTE + Edited Nearest Neighbors
+
+=================================================================
+BIBLIOTHÈQUES POUR L'INTERFACE DE DÉPLOIEMENT
+=================================================================
+
+16. streamlit (st)
+   - Utilisation: Création d'applications web interactives
+   - Version typique: >= 1.0.0
+
+=================================================================
+AUTRES BIBLIOTHÈQUES
+=================================================================
+
+17. warnings
+    - Utilisation: Gestion des avertissements
+
+=================================================================
+COMMANDES D'INSTALLATION
+=================================================================
+
+Pour installer toutes les bibliothèques nécessaires, utilisez:
+
+pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn streamlit
+
+OU
+
+conda install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn streamlit
+
+=================================================================
+NOTES
+=================================================================
+
+- La bibliothèque imbalanced-learn (imblearn) est essentielle pour
+  gérer le déséquilibre des classes dans les données de fraude.
+
+- Streamlit permet de déployer facilement le modèle en tant
+  qu'application web sans avoir besoin de HTML/CSS/JavaScript.
+
+- RobustScaler est preferé a StandardScaler pour la colonne Amount
+  car il est plus robuste aux valeurs aberrantes (outliers).
+
+=================================================================
