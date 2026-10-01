@@ -5,8 +5,9 @@ class imbalance and compare classification models for fraud detection.
 
 ## Features
 
-- Upload your own CSV (columns `Time`, `V1`–`V28`, `Amount`, `Class`, the layout of the
-  public credit-card fraud dataset) or use the sample file in this repository.
+- Upload a CSV from the sidebar (columns `Time`, `V1`–`V28`, `Amount`, `Class`, the layout
+  of the public credit-card fraud dataset). The small sample file in this repository can be
+  uploaded for a quick test.
 - **Imbalance handling**: SMOTE, ADASYN, RandomOverSampler, RandomUnderSampler,
   SMOTETomek, SMOTEENN (via `imbalanced-learn`).
 - **Models**: Logistic Regression, Random Forest, Gradient Boosting.
